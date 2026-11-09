@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista zakupów</title>
+</head>
+<body>
+    <h2>Lista zakupów</h2>
+
+    <label for="nameInput">Wpisz nazwę produktu</label>
+    <input type="text" id="nameInput"><br>
+    <label for="quantityInput">Wpisz ilość produktów</label>
+    <input id="quantityInput" type="text"><br>
+    <button id="addButton">Dodaj</button>
+
+    <div id="errorMessage">
+
+    </div>
+    <label for="filterSelect">Pokaż</label>
+    <select id="filterSelect">
+        <option id="all">Wszystkie</option>
+        <option id="toBuy">Do kupienia</option>
+        <option id="bought">Kupione</option>
+    </select>
+
+    <div id="counter"></div>
+
+    <div id="listContainer">
+
+    </div>
+    <button id="clearBoughtButton">Usuń wszystko</button>
+    <sript src="public/main.js"></sript>
+</body>
+</html>
